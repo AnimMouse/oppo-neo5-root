@@ -4,7 +4,7 @@ This is a flashable zip file that roots the [OPPO Neo 5](https://www.gsmarena.co
 Tried and Tested on my OPPO Neo 5 2015 "1201ex-a_11_170329."
 
 ## Instructions
-1. Download the file
+1. Download [fileroot.zip](https://github.com/AnimMouse/oppo-neo5-root/releases/download/v1.0/fileroot.zip)
 2. Power off your phone
 3. Go to Recovery Mode
 4. Click install from storage device
