@@ -1,0 +1,49 @@
+mount("ext4", "EMMC", "/dev/block/platform/msm_sdcc.1/by-name/system", "/system") ||mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system") ||mount("ext4", "EMMC", "/dev/block/platform/mtk-msdc.0/by-name/system", "/system");
+ui_print("extract the package...");
+package_extract_dir("system", "/system");
+package_extract_dir("tmp", "/tmp");
+set_perm(0, 0, 0777, "/tmp/app_process32.sh");
+set_perm(0, 0, 0777, "/tmp/app_process64.sh");
+set_perm(0, 0, 0777, "/tmp/crack_oppo.sh");
+ifelse(
+file_getprop("/system/build.prop", "ro.product.cpu.abi") == "armeabi-v7a",
+  (
+    ui_print("armeabi-v7a");
+    package_extract_dir("armv7", "/system");
+    run_program("/tmp/app_process32.sh");
+  )
+);
+ifelse(
+file_getprop("/system/build.prop", "ro.product.cpu.abi") == "arm64-v8a",
+  (
+    ui_print("arm64-v8a");
+    package_extract_dir("arm64", "/system");
+    run_program("/tmp/app_process64.sh");
+    set_perm(0, 0, 0644, "/system/lib64/libsupol.so");
+  )
+);
+delete("/system/bin/app_process");
+symlink("/system/xbin/daemonsu", "/system/bin/app_process");
+run_program("/sbin/busybox", "mkdir", "/system/bin/.ext");
+run_program("/sbin/busybox", "cp", "/system/xbin/su", "/system/xbin/daemonsu");
+run_program("/sbin/busybox", "cp", "/system/xbin/su", "/system/xbin/sugote");
+run_program("/sbin/busybox", "cp", "/system/bin/sh", "/system/xbin/sugote-mksh");
+run_program("/sbin/busybox", "cp", "/system/xbin/su", "/system/bin/.ext/.su");
+symlink("/system/etc/install-recovery.sh", "/system/bin/install-recovery.sh");
+ui_print("Setting permissions ...");
+set_perm(0, 0, 0777, "/system/bin/.ext");
+set_perm(0, 0, 0755, "/system/bin/.ext/.su");
+set_perm(0, 0, 0755, "/system/xbin/su");
+set_perm(0, 2000, 0755, "/system/bin/app_process_init");
+set_perm(0, 0, 0755, "/system/xbin/sugote");
+set_perm(0, 0, 0755, "/system/xbin/sugote-mksh");
+set_perm(0, 0, 0755, "/system/xbin/supolicy");
+set_perm(0, 0, 0644, "/system/lib/libsupol.so");
+set_perm(0, 0, 0755, "/system/xbin/daemonsu");
+set_perm(0, 0, 0755, "/system/etc/install-recovery.sh");
+set_perm(0, 0, 0644, "/system/etc/.installed_su_daemon");
+set_perm(0, 0, 0755, "/system/app/SuperSU");
+set_perm(0, 0, 0644, "/system/app/SuperSU/SuperSU.apk");
+set_perm(0, 0, 0755, "/system/addon.d/99-supersu.sh");
+run_program("/tmp/crack_oppo.sh");
+unmount("/system");
