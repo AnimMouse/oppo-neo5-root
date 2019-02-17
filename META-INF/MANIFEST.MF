@@ -1,0 +1,60 @@
+Manifest-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+
+Name: system/etc/install-recovery.sh
+SHA1-Digest: RQJ5Fy/ZVZiz35w8g2YffpQg4yM=
+
+Name: armv7/xbin/su
+SHA1-Digest: 8p02c42iGnzvBkMmRi2dnlJ7oSE=
+
+Name: arm64/xbin/su
+SHA1-Digest: GyrezE/uFO3AxAOCezwXaOaFaw4=
+
+Name: tmp/app_process64.sh
+SHA1-Digest: iXNykOC9W7HkQ7qbC4KBG+l//ug=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest: UkxqxRQD/hmGcG8+yIWe6zR8DMI=
+
+Name: armv7/xbin/supolicy
+SHA1-Digest: +P4doalHOMJPQ4+Qr7zpajhEelc=
+
+Name: arm64/xbin/supolicy
+SHA1-Digest: Cbl954P2yW2lnMd/anIRWmFEnKA=
+
+Name: tmp/app_process32.sh
+SHA1-Digest: LswFsYB75HnjF3W/FYBEcAYKV+8=
+
+Name: system/app/SuperSU/SuperSU.apk
+SHA1-Digest: IDYlRGDCoVWEZn6jtWJd0Mf+DlU=
+
+Name: tmp/patch
+SHA1-Digest: lokLA9Zx74lMvrBETD8g7fNbb9w=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest: 1ATm4iNbYkTVEW8kk9zChyEkmeA=
+
+Name: arm64/lib64/libsupol.so
+SHA1-Digest: C0PNg9+00zMg363Q86vOMTuv6e8=
+
+Name: META-INF/com/android/otacert
+SHA1-Digest: d1V8g8Fc0oGZj+Hj7N7l/SngEyk=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest: j0PvD+oicwiklif0X55Eb45C45s=
+
+Name: arm64/lib/libsupol.so
+SHA1-Digest: C0PNg9+00zMg363Q86vOMTuv6e8=
+
+Name: armv7/lib/libsupol.so
+SHA1-Digest: 59+6KaIHma81Lq0TbpX5uv9gMkI=
+
+Name: tmp/crack_oppo.sh
+SHA1-Digest: 5L6Xz4Z72oOmUd+go5lyfRlN7Eg=
+
+Name: system/etc/.installed_su_daemon
+SHA1-Digest: NWoZK3kTsExUV00Ywo1G5jlUKKs=
+
+Name: system/addon.d/99-supersu.sh
+SHA1-Digest: WlEF4Y3sBTQXbyB2ywKsfn227AU=
+

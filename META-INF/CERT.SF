@@ -1,0 +1,61 @@
+Signature-Version: 1.0
+Created-By: 1.0 (Android SignApk)
+SHA1-Digest-Manifest: /CjUEihK7uRXYVYHxWx+ARY9vVM=
+
+Name: system/etc/install-recovery.sh
+SHA1-Digest-Manifest: Ng7HSBgRPNsXbBNjh8zchWt/fXA=
+
+Name: armv7/xbin/su
+SHA1-Digest-Manifest: Q2ZdC5QX/zPG6roR1DftyMGui70=
+
+Name: arm64/xbin/su
+SHA1-Digest-Manifest: TRUx4cCfjIfXaO2PQQcQXvyE2xs=
+
+Name: tmp/app_process64.sh
+SHA1-Digest-Manifest: rUVAcPPd5mc22w1/m/YgNYuyZ48=
+
+Name: META-INF/com/google/android/update-binary
+SHA1-Digest-Manifest: rSN2vZBITL0ydNHQP2yNEXHsekk=
+
+Name: armv7/xbin/supolicy
+SHA1-Digest-Manifest: Q0icrHTtKtA4npr6Oke1cj1H/MM=
+
+Name: arm64/xbin/supolicy
+SHA1-Digest-Manifest: t7KcNrSIhdJO6w5FARe1/A6wcbc=
+
+Name: tmp/app_process32.sh
+SHA1-Digest-Manifest: O/7eoLWiu5q8vZClbDyr6aCLXh0=
+
+Name: system/app/SuperSU/SuperSU.apk
+SHA1-Digest-Manifest: UUU/1GvUwS6D4/erSRtXLUtqIWE=
+
+Name: tmp/patch
+SHA1-Digest-Manifest: 7F4ZoT/XMh0e9o9+uZq96mSOPlQ=
+
+Name: META-INF/com/google/android/updater-script
+SHA1-Digest-Manifest: RvZ5CzgtW2vrU0G0gzSIOtn0JVo=
+
+Name: arm64/lib64/libsupol.so
+SHA1-Digest-Manifest: AcHoRI11tIsQwVZ4+qzzdl5VNJk=
+
+Name: META-INF/com/android/metadata
+SHA1-Digest-Manifest: LFnKyRZI/q2AFizA2acjDxsVVIM=
+
+Name: META-INF/com/android/otacert
+SHA1-Digest-Manifest: LXyMAHnL0j+IWx0D8v2X9ioaCK0=
+
+Name: armv7/lib/libsupol.so
+SHA1-Digest-Manifest: 14j+eIQ4KROZpmW1pvZt6zA3Goo=
+
+Name: arm64/lib/libsupol.so
+SHA1-Digest-Manifest: yM1eNxlL4EhagFYWL6fHcflP/vQ=
+
+Name: tmp/crack_oppo.sh
+SHA1-Digest-Manifest: TDt98Naa3OPWNs9Z7u+obsse09w=
+
+Name: system/etc/.installed_su_daemon
+SHA1-Digest-Manifest: XQCn1YB2l4Eeb13bvTQj5JXBCng=
+
+Name: system/addon.d/99-supersu.sh
+SHA1-Digest-Manifest: /alWS0r6jALhRDdPg58gbWtbq8g=
+
